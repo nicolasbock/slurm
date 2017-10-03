@@ -4,7 +4,7 @@ if WITH_CXX
 BLUEGENE = bluegene
 endif
 
-SUBDIRS = other alps $(BLUEGENE) cons_res cray linear serial
+SUBDIRS = other alps $(BLUEGENE) cons_res cray linear serial openstack
 
 # Each plugin here needs a plugin_id, here are the currect plug_ids
 # for each plugin.
