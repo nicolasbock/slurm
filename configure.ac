@@ -8,6 +8,7 @@ AC_PREREQ(2.59)
 AC_CONFIG_SRCDIR([configure.ac])
 AC_CONFIG_AUX_DIR([auxdir])
 AC_CANONICAL_TARGET([])
+AC_CONFIG_MACRO_DIRS([auxdir])
 
 dnl the is a generic flag to avoid building things
 AM_CONDITIONAL(DONT_BUILD, test "1" = "0")
@@ -635,6 +636,7 @@ AC_CONFIG_FILES([Makefile
 		 src/plugins/select/cons_res/Makefile
 		 src/plugins/select/cray/Makefile
 		 src/plugins/select/linear/Makefile
+		 src/plugins/select/openstack/Makefile
 		 src/plugins/select/other/Makefile
 		 src/plugins/select/serial/Makefile
 		 src/plugins/slurmctld/Makefile
